@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
   <style>
     body {
-      text-align: center; /* Centraliza o conteúdo */
+      text-align: center;
     }
     img {
-      display: block; /* Torna a imagem um bloco */
-      margin: 20px auto; /* Centraliza a imagem */
-      max-width: 100%; /* Faz a imagem ser responsiva */
-      height: auto; /* Mantém a proporção */
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
     }
-    button {
-      margin-top: 20px; /* Espaçamento acima do botão */
+    .botao-ciano {
+      background-color: #00bcd4; /* Ciano */
+      color: white; /* Texto branco */
+      border: none; /* Remove borda padrão */
+      padding: 12px 24px; /* Espaçamento interno */
+      border-radius: 6px; /* Bordas arredondadas */
+      cursor: pointer; /* Muda o cursor para indicar que é clicável */
+      font-size: 16px; /* Tamanho da fonte */
+    }
+    .botao-ciano:hover {
+      background-color: #0097a7; /* Ciano mais escuro ao passar o mouse */
     }
   </style>
   <script src="script.js" defer></script>
@@ -29,7 +38,7 @@
 
 <img src="gigante.jpg" alt="Logo do Grêmio">
 
-<button>Clique aqui</button>
+<button class="botao-ciano" onclick="abrirUrl()">Clique aqui para ir ao site oficial</button>
 
 <p>
   Este é um site de teste destinado ao acesso ao site oficial do Clube do Grêmio, comumente referido como Maior do Sul.
